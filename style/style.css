@@ -1,0 +1,543 @@
+@charset "UTF-8";
+@import url(style_Reset.css);
+
+
+/* div#headerFrame */
+div#headerFrame {
+    border-top: 2px solid #284a7e;
+}
+
+#headerFrame>header#header {
+    width: 1220px;
+    height: 126px;
+    /*border: 1px solid #aaa;*/
+    /*padding-bottom: 24px;*/
+    margin: 0 auto;
+    /*margin-bottom: 30px;*/
+
+    align-items: flex-end;
+}
+
+#headerFrame #headerLogo a {
+    width: 183px;
+    height: 40px;
+    /*border: 1px solid #000;*/
+    margin-bottom: 17px;
+    background-image: url(../images/headerLogo.gif);
+    display: inline-block;
+}
+
+div#headerMenuArea {
+    /* border: 1px solid #f80;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#headerFrame nav {
+    height: 50px;
+    /*border: 1px solid #08f;*/
+
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#headerFrame nav#headerLNB {
+    text-align: right;
+    padding-bottom: 30px;
+    /*border: 1px solid #000;*/
+}
+
+#headerFrame nav#headerLNB span {
+    color: #3f50a1;
+    font-size: 15px;
+    /*border: 1px solid #000;*/
+    margin: 0 6px;
+}
+
+#headerFrame nav#headerLNB span:not(:nth-child(2)) {
+    cursor: pointer;
+}
+
+
+/* nav#gnb */
+#headerFrame nav#gnb {
+    padding-left: 40px;
+}
+
+#headerFrame nav#gnb ul#mainMenu {
+    height: 100%;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li {
+    padding: 20px 0;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:first-child,
+#headerFrame nav#gnb ul#mainMenu>li:first-child>ul {
+    width: 180px;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(2),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(2)>ul {
+    width: 208px;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(3),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(3)>ul {
+    width: 190px;
+}
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(4),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(4)>ul {
+    width: 180px;
+}
+
+
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(5),
+#headerFrame nav#gnb ul#mainMenu>li:nth-child(5)>ul {
+    width: 220px;
+}
+
+
+#headerFrame nav#gnb ul.subMenu {
+    border-right: 1px solid #aaa;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 51px;
+    z-index: 100;
+}
+#headerFrame nav#gnb li.mainLi:first-child ul.subMenu {
+    border-left: 1px solid #aaa;
+}
+
+
+#headerFrame nav#gnb ul.subMenu img {
+    position: relative;
+    left: -12px;
+}
+
+#headerFrame nav#gnb li.mainLi>a {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    /* border: 1px solid #000; */
+    display: inline-block;
+}
+
+#headerFrame nav#gnb li.subLi>a {
+    font-size: 14px;
+    line-height: 42px;
+    padding: 0 20px;
+}
+
+#headerFrame nav#gnb li.subLi:hover {
+    color: #fff;
+    background-color: #f56254;
+}
+
+/* nav#gnb */
+
+
+/* div#headerFrame */
+
+
+/* div#gnbBGFrame */
+
+div#gnbBGFrame {
+    width: 100%;
+    height: 254px;
+
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* div#gnbBG */
+div#gnbBG {
+    width: 100%;
+    height: 180px;
+
+
+}
+
+/* div#gnbBG */
+
+/* div#gnbBGFrame */
+
+
+
+
+/* div#searchArea */
+div#searchArea {
+    width: 100%;
+    height: 710px;
+    padding-top: 70px;
+    background-image: url(../images/visua_a.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+div#searchArea>h1 {
+    color: #fff;
+    width: 600px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin: 50px auto;
+}
+
+div#searchArea>div#searchBG {
+    width: 770px;
+
+    padding: 12px 26px 25px;
+    /*border: 1px solid #f80;*/
+    border-radius: 50px;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+div#searchArea>div#searchBG span {
+    width: 36px;
+    height: 36px;
+    /*border: 1px solid #000;*/
+
+    cursor: pointer;
+    display: inline-block;
+}
+
+div#searchArea>div#searchBG span#closeMark {
+    color: #666;
+    font-size: 44px;
+    text-align: center;
+    line-height: 44px;
+    /*display: none;  공간도 사라지므로 안됨!*/
+    visibility: hidden;
+    /* 공간을 남겨둔채로 사라짐 */
+
+    transform: translateY(7px);
+}
+
+div#searchArea>div#searchBG span#searchMark {
+
+    margin-right: 14px;
+
+    background-image: url(../images/btn_search.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    transform: translateY(12px);
+
+    z-index: 1;
+}
+
+div#searchArea>div#searchBG>input {
+    color: #666;
+    width: 620px;
+    font-size: 17px;
+    padding: 10px 0;
+    border: none;
+}
+
+/*placeholder 속성에 CSS 적용시작*/
+div#searchArea>div#searchBG>input::placeholder {
+    color: #aaa;
+    font-size: 19px;
+}
+
+/* 슈도 엘리먼트 속성 */
+/*placeholder 속성에 CSS 적용끝*/
+
+/* div#searchArea */
+
+
+/*div#mainIconLNB_Frame*/
+div#mainIconLNB_Frame {
+    width: 100%;
+    height: 270px;
+    padding-top: 30px;
+    background-color: rgba(26, 38, 67, 0.8);
+
+    position: absolute;
+    transform: translateY(-90%);
+}
+
+div#mainIconLNB_Frame>nav {
+    padding: 10px;
+    /*border: 1px solid #f80;*/
+
+    justify-content: center;
+}
+
+#mainIconLNB_Frame div.mainIconBox {
+    text-align: center;
+    /*border: 1px solid #f80;*/
+    margin: 10px 50px;
+
+    cursor: pointer;
+}
+
+#mainIconLNB_Frame div.mainIcon {
+    margin-bottom: 20px;
+}
+
+#mainIconLNB_Frame span {
+    color: #fff;
+    font-size: 24px;
+    /* font-weight: bold;*/
+}
+
+/*div#mainIconLNB_Frame*/
+
+
+/* div#jusoIntro_Frame */
+div#jusoIntro_Frame {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 450px;
+}
+
+div#jusoIntro {
+    width: 1200px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -68%);
+}
+
+#jusoIntro .jusoItemBox {
+    background-color: #f8f8f8;
+    padding: 40px 30px;
+    width: 250px;
+}
+
+#jusoIntro .jusoItemBox li {
+    line-height: 42px;
+    width: 310px;
+    padding-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.selected {
+    background-image: url(../images/tabslit_on.png);
+    background-size: 260px 44px;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: bold;
+}
+
+#jusoRoadSign {
+    padding: 40px 50px;
+}
+
+#jusoExplain {
+    padding-top: 80px;
+    padding-right: 50px;
+}
+
+#jusoExplain h1 {
+    margin-bottom: 30px;
+}
+
+#jusoExplain p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#jusoExplain p span {
+    color: #08f;
+}
+
+#slide {
+    overflow: hidden;
+}
+
+/* div#jusoIntro_Frame */
+
+
+/* contentsFrame */
+#contentsFrame {
+    width: 100%;
+}
+
+#contents {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+
+
+#userService {
+    width: 580px;
+    height: 320px;
+}
+
+#api {
+    background-color: #f5f7fc;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 40px 0;
+    height: 240px;
+}
+
+#api .apiBox a div {
+    padding: 30px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+#api>.apiBox {
+    text-align: center;
+    flex: 1;
+    border-left: 1px solid #eee;
+}
+
+#noticeBoard {
+    width: 290px;
+    height: 320px;
+}
+
+#noticeBoard header {
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#noticeBoard header h2 {
+    margin-bottom: 4px;
+}
+
+#noticeControl {
+    padding-bottom: 3px;
+    align-items: flex-end;
+    width: 96px;
+    justify-content: space-between;
+}
+
+#noticeControl span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #909090;
+    cursor: pointer;
+
+}
+
+#noticeControl img {
+    cursor: pointer;
+}
+
+#noticeControl .noticeSelected {
+    width: 45px;
+    background-color: #1078bc;
+}
+
+#noticeSlide {
+    width: 285px;
+    height: 240px;
+    overflow: hidden;
+}
+
+#shuttleFrame2 {
+    width: 570px;
+    height: 240px;
+}
+
+#helpCenter {
+    width: 290px;
+    height: 320px;
+}
+
+#helpCenter header {
+    padding-bottom: 10px;
+}
+
+#helpCenterInfo {
+    border: 1px solid #ccc;
+    padding: 50px;
+    height: 240px;
+    background-image: url(../images/icon_helpcenter.png);
+    background-repeat: no-repeat;
+    background-position: 170px 140px;
+}
+
+#centerPhone {
+    color: #284a7e;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+#helpCenterInfo ul li {
+    line-height: 30px;
+}
+
+#LNBFrame {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#LNB {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+#LNBMenu .LNBLi {
+    padding: 15px 10px;
+}
+
+#LNBMenu .LNBLi:hover {
+    text-decoration: underline;
+}
+
+#LNBMenu .LNBLi span {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin-top: 2px;
+    border-right: 1px solid #aaa;
+}
+
+#footerFrame {
+    background-color: #f2f2f2;
+}
+
+#footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#footerLogo {
+    flex: 1;
+}
+
+#copyright {
+    font-size: 15px;
+    padding-left: 40px;
+    flex: 3;
+}
+
+#rightLogo {
+    flex: 1;
+}

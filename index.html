@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>도로명주소_메인페이지</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div id="headerFrame">
+            <header id="header" class="flex-container">
+
+                <div id="headerLogo">
+                    <a href="#"></a>
+                </div> <!-- div#headerLogo -->
+
+                <div id="headerMenuArea">
+
+                    <nav id="headerLNB" class="flex-container">
+
+                        <span>ENGLISH</span>
+                        <span><img src="images/linkBullet.png" alt=""></span>
+                        <span>개발자센터</span>
+
+                    </nav> <!-- nav#headerLNB -->
+
+                    <nav id="gnb">
+
+                        <ul id="mainMenu" class="flex-container">
+                            <li class="mainLi">
+                                <a href="#">도로명 주소 소개</a>
+                                <ul class="subMenu">
+                                    <li class="subLi"><a href="#">도로명주소란?</a>
+                                        <img src="images/icon_doulewindow.gif" alt="첨부파일 이미지" width="10">
+                                    </li>
+                                    <li class="subLi"><a href="#">아름다운 건물번호판</a><img src="images/icon_doulewindow.gif" alt="첨부파일 이미지" width="10"></li>
+                                    <li class="subLi"><a href="#">아름다운 길</a></li>
+                                    <li class="subLi"><a href="#">홍보자료</a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="mainLi">
+                                <a href="#">주소활용서비스</a>
+                                <ul class="subMenu">
+                                    <li class="subLi"><a href="#">도로명 정보 조회</a></li>
+                                    <li class="subLi"><a href="#">도로명주소 지도 보기</a><img src="images/icon_doulewindow.gif" alt="첨부파일 이미지" width="10"></li>
+                                    <li class="subLi"><a href="#">도로면주소 고시정보 조회</a></li>
+                                    <li class="subLi"><a href="#">도로명주소 안내도 다운로드</a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="mainLi">
+                                <a href="#">주소전환서비스</a>
+                                <ul class="subMenu">
+                                    <li class="subLi"><a href="#">50건 이하 주소전환</a></li>
+                                    <li class="subLi"><a href="#">3,000건 이하 주소전환</a></li>
+                                    <li class="subLi"><a href="#">100만건 이하 주소전환</a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="mainLi">
+                                <a href="#">주소통계서비스</a>
+                                <ul class="subMenu">
+                                    <li class="subLi"><a href="#">주소통계정보</a></li>
+                                    <li class="subLi"><a href="#">우리 집 주소는?</a></li>
+                                    <li class="subLi"><a href="#">도로명주소 인포그래픽</a></li>
+                                    <li class="subLi"><a href="#">주소이용추이</a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                    <li class="subLi"><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="mainLi">
+                                <a href="#">고객지원</a>
+                                <ul class="subMenu">
+                                    <li class="subLi"><a href="#">도움센터(Q&amp;A)</a></li>
+                                    <li class="subLi"><a href="#">주소동일성 영문증명서 발급</a></li>
+                                    <li class="subLi"><a href="#">공지사항</a></li>
+                                    <li class="subLi"><a href="#">언론보도</a></li>
+                                    <li class="subLi"><a href="#">자주묻는 질문(FAQ)</a></li>
+                                    <li class="subLi"><a href="#">불편신고 게시판</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </nav> <!-- nav#gnb -->
+
+                </div> <!-- div#headerMenuArea -->
+
+            </header>
+
+
+        </div> <!-- div#headerFrame -->
+
+        <div id="gnbBGFrame">
+            <div id="gnbBG"></div>
+        </div> <!-- div#gnbBGFrame -->
+
+
+        <form action="support/sample.html" method="get">
+            <div id="searchArea">
+
+                <h1>도로명 주소를 찾으시나요?</h1>
+
+                <div id="searchBG">
+                    <input id="searchWord" type="text" placeholder="예) 한누리대로 411, 국립중앙박물관, 상암동 1595, 초성검색" maxlength="50" name="searchKeyword">
+                    <!-- value attribute 밸류 속성 -->
+                    <span id="closeMark">&times;</span>
+                    <span id="searchMark"></span> <!--전송실행-->
+
+                </div> <!-- div#searchBG-->
+
+            </div> <!-- div#searchArea -->
+        </form>
+
+
+        <div id="mainIconLNB_Frame">
+
+           <nav id="mainIconLNB" class="flex-container">
+              <div class="mainIconBox" title="도로명주소 지도 보기 새창으로 열림">
+                  <div class="mainIcon">
+                      <img src="images/icon_qmn_1.png" alt="지도 보기">
+                  </div>
+                  <span>지도 보기</span>
+              </div>
+              <div class="mainIconBox">
+                  <div class="mainIcon">
+                      <img src="images/icon_qmn_2.png" alt="도로명 정보 조회">
+                  </div>
+                  <span>도로명 정보 조회</span>
+              </div>
+              <div class="mainIconBox">
+                  <div class="mainIcon">
+                      <img src="images/icon_qmn_3.gif" alt="지역별 도로명">
+                  </div>
+                  <span>지역별 도로명</span>
+              </div>
+              <div class="mainIconBox">
+                  <div class="mainIcon">
+                      <img src="images/icon_qmn_4.png" alt="주소 전환">
+                  </div>
+                  <span>주소 전환</span>
+              </div>
+
+              <div class="mainIconBox">
+                  <div class="mainIcon">
+                      <img src="images/icon_qmn_5.png" alt="도움센터(Q&A)">
+                  </div>
+                  <span>도움센터(Q&amp;A)</span>
+              </div>
+
+           </nav>
+
+        </div>  <!-- div#iconLNB -->
+
+
+        <div id="jusoIntro_Frame">
+
+            <div id="jusoIntro" class="flex-container">
+               
+                <div class="jusoItemBox">
+                    <ul id="jusoItem">
+                        <li class="selected">도로명 주소란?</li>
+                        <li>건물번호 생성과정</li>
+                        <li>도로명의 의미</li>
+                        <li>상세주소에 대해</li>
+                        <li>주소정보시설 확인</li>
+                        <li>국가지점번호란?</li>
+                        <li>국가기초구역의 사용</li>
+                    </ul>
+                </div>
+                
+                <div id="slide">
+                    <div id="shuttleFrame">
+                        <div class="flex-container">
+                            <div id="jusoRoadSign">
+                                <img src="images/know_addr_1.gif" alt="addr1">
+                            </div>
+
+                            <div id="jusoExplain">
+                                <h1>도로명 주소란?</h1>
+                                <hr>
+                                <p>도로명 주소는 <span>도로명 + 건물번호</span>로 이루어져 있습니다.</p>
+                                <p>도로명은 도로구간마다 부여한 이름으로<br> <span>명사 + 도로별 구분기준(대로/로/길)</span>으로 구성합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+
+        </div> <!-- div#jusoIntro_Frame -->
+
+       
+        <div id="contentsFrame">
+            <div id="contents" class="flex-container">
+               <!-- 활용 서비스 -->
+                <div id="userService">
+                    <h2>활용 서비스</h2>
+                    
+                    <div id="api" class="flex-container">
+                        <div class="apiBox">
+                            <a href="#">
+                               <div>
+                                <img src="images/icon_service_1.gif" alt="주소DB제공"></div><br>
+                                <span>주소 DB<br>제공</span>
+                            </a>
+                        </div>
+                        <div class="apiBox">
+                            <a href="#">
+                               <div>
+                                <img src="images/icon_service_2.png" alt="주소DB연계"></div><br>
+                                <span>주소 DB<br>연계</span>
+                            </a>
+                        </div>
+                        <div class="apiBox">
+                            <a href="#">
+                                <div>
+                                <img src="images/icon_service_3.png" alt="오픈API"></div><br>
+                                <span>오픈<br>API</span>
+                            </a>
+                        </div>
+                        <div class="apiBox">
+                            <a href="#">
+                                <div>
+                                <img src="images/icon_service_4.png" alt="주소검색솔루션"></div><br>
+                                <span>주소 검색<br>솔루션</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--  알림판  -->
+                <div id="noticeBoard">
+                    <header class="flex-container">
+                        <h2>알림판</h2>
+                        <div id="noticeControl" class="flex-container">
+                            <span class="noticeSelected" id="ctrl1"></span>
+                            <span id="ctrl2"></span>
+                            <img src="images/btn_ps.gif" alt="일시정지" height="17">
+                            
+                        </div>
+                    </header>
+                    <!-- 슬라이드 쇼 -->
+                    <div id="noticeSlide">
+                        <div id="shuttleFrame2" class="flex-container">
+                            <a href="#">
+                                <img src="images/notice_banner_01.jpg" alt="배너1">
+                            </a>
+                            <a href="#">
+                                <img src="images/notice_banner_01.png" alt="배너2">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!--  도움 센터  -->
+                <div id="helpCenter">
+                    <header>
+                        <h2>도움센터</h2>
+                    </header>
+                    
+                    <div id="helpCenterInfo">
+                        <div id="centerPhone">1588-0061</div>
+                        <ul>
+                            <li>ㆍ평일 09-18시</li>
+                            <li>ㆍ점심 12-13시</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="LNBFrame">
+            <div id="LNB">
+                <ul id="LNBMenu" class="flex-container">
+                    <li class="LNBLi"><a href="#">법령정보</a></li>
+                    <li class="LNBLi"><span></span></li>
+                    <li class="LNBLi"><a href="#">담당자연락처</a></li>
+                    <li class="LNBLi"><span></span></li>
+                    <li class="LNBLi"><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footerFrame">
+            <footer id="footer" class="flex-container">
+
+                <div id="footerLogo">
+                    <a href="#"><img src="images/logo_foot_gray.jpg" alt="푸터로고"></a>
+                </div>
+
+                <div id="copyright">
+                    <p>30116 세종특별자치시 한누리대로 411, 644호 행정안전부 주소정책과</p><br>
+                    <p>Copyright &copy; Ministry of the Interior and Safety.All Rights reserved.</p>
+                </div>
+                
+                <div id="rightLogo">
+                    <img src="images/mark_klid.png" alt="mark1">
+                    <img src="images/mark_wa.png" alt="mark2">
+                </div>
+
+            </footer>
+        </div>
+
+    </div> <!-- div#wrap -->
+
+</body>
+
+</html>
